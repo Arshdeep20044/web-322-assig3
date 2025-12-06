@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Edit Task</title>
+<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+
+<h2>Edit Task</h2>
+
+<form method="POST" action="/tasks/edit/<%= task.id %>">
+  <input name="title" value="<%= task.title %>" required />
+  <textarea name="description"><%= task.description %></textarea>
+  <input type="date" name="dueDate" value="<%= task.dueDate %>" required />
+  <select name="status">
+    <option <%= task.status==="incomplete"?"selected":"" %>>incomplete</option>
+    <option <%= task.status==="complete"?"selected":"" %>>complete</option>
+  </select>
+
+  <button type="submit">Update</button>
+</form>
+
+<a href="/tasks">Back</a>
+
+</body>
+</html>

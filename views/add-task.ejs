@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Add Task</title>
+<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+
+<h2>Add Task</h2>
+
+<form method="POST" action="/tasks/add">
+  <input name="title" placeholder="Title" required />
+  <textarea name="description" placeholder="Description"></textarea>
+  <input type="date" name="dueDate" required />
+  <select name="status">
+    <option>incomplete</option>
+    <option>complete</option>
+  </select>
+  <button type="submit">Add Task</button>
+</form>
+
+<a href="/tasks">Back</a>
+
+</body>
+</html>
