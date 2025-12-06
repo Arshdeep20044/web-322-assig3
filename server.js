@@ -1,3 +1,15 @@
+/********************************************************************************
+* WEB322 – Assignment 03
+*
+* I declare that this assignment is my own work in accordance with Seneca's
+* Academic Integrity Policy:
+*
+* https://www.senecapolytechnic.ca/about/policies/academic-integrity-policy.html
+*
+* Name: ___Arshdeep singh__ Student ID: _178511234_ Date: ___05-12-2025_
+*
+********************************************************************************/
+
 require("dotenv").config();
 console.log("MONGO:", process.env.MONGO_URI);
 console.log("POSTGRES:", process.env.POSTGRES_HOST);
